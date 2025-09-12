@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Highlight Stale Agile Issues",
   "version": "0.1",
-  "description": "Colorie en rouge les issues qui sont dans leur statut depuis >24h.",
+  "description": "Highlights Redmine issues that stayed in a specific status for more than one day.",
   "permissions": ["storage"],
   "host_permissions": ["https://*/redmine/projects/*/agile/board"],
   "content_scripts": [
