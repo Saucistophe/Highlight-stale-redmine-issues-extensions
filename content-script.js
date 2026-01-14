@@ -64,7 +64,7 @@ chrome.storage.sync.get({ columns: [] }, (data) => {
 
 const observer = new MutationObserver(() => {
     clearTimeout(window.__redmine_scan_timer);
-    window.__redmine_scan_timer = setTimeout(scanAll, 300);
+    window.__redmine_scan_timer = setTimeout(scanAll, 3600);
 });
 
 observer.observe(document.body, { childList: true, subtree: true });
